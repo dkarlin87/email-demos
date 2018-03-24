@@ -1,9 +1,14 @@
+// script.js
 
+    // create the module and name it soolApp
+        // also include ngRoute for all our routing needs
     var soolApp = angular.module('soolApp', ['ngRoute']);
 
+    // configure our routes
     soolApp.config(function($routeProvider) {
         $routeProvider
 
+            // route for the home page
             .when('/', {
                 templateUrl : 'pages/home.html',
                 controller  : 'mainController'
